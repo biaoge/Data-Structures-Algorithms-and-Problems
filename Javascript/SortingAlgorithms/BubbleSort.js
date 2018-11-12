@@ -1,5 +1,8 @@
+// O(n^2)
 const BubbleSort = (array) => {
+  // Flag that holds info about whether the swap has occur or not.
   let flag = false;
+  // Clone original array to prevent its modification.
   const otherArray = [...array];
 
   for(let i = 0; i < otherArray.length; i++) {
@@ -14,6 +17,8 @@ const BubbleSort = (array) => {
     }
   }
 
+  // If there were no swaps then array is already sorted and there is
+  // no need to proceed.
   if(!flag) {
     return otherArray;
   }
