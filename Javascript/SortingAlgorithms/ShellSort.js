@@ -1,4 +1,4 @@
-// O(n^1.5) time complexity for Knuth Gap sequence.  O(1) space, NOT stable
+// O(n^1.5) time complexity for Knuth Gap sequence.  O(1) space, NOT stable sort
 const ShellSort = (array) => {
   // Clone original array to prevent its modification.
   const otherArray = [...array];
