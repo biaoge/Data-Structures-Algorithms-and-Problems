@@ -1,4 +1,4 @@
-// O(n^2) time, O(1) spcae, Stable Sorting
+// O(n^2) time, O(1) spcae, Stable Sort
 const InsertionSort = (array) => {
   // Clone original array to prevent its modification.
   let otherArray = [...array];
