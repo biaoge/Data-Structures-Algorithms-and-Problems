@@ -25,4 +25,4 @@ const BubbleSort = (array) => {
   return otherArray;
 }
 
-// For education, seldom use in real life sorting.
+// For education, seldom used in real life sorting.
