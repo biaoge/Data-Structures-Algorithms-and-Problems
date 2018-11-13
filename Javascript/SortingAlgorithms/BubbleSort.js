@@ -1,4 +1,4 @@
-// O(n^2)
+// O(n^2) time, O(1) Space,  Stable Sort: maintain the relative order of records with equal keys (e.g: value)
 const BubbleSort = (array) => {
   // Flag that holds info about whether the swap has occur or not.
   let flag = false;
@@ -24,5 +24,3 @@ const BubbleSort = (array) => {
   }
   return otherArray;
 }
-
-// console.log(BubbleSort([3,5,4,2]));
