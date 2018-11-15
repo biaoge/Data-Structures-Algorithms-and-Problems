@@ -1,5 +1,6 @@
-import com.sun.scenario.effect.Merge;
-
+/**
+ * O(nlogn) average, best, worst time complexity, O(n) space
+ */
 public class MergeSort {
 
     public static void main(String[] args) {

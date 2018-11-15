@@ -9,6 +9,9 @@ public class QuickSort {
 
     /**
      * QuickSort for sorting this array
+     * O(n^2) worst time complexity
+     * O(nlogn) average and best time complexity
+     * O(n) space (using call stack)
      * @param nums
      */
     public static void quickSort(int[] nums) {
