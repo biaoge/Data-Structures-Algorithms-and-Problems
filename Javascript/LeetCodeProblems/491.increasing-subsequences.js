@@ -75,3 +75,26 @@ function dfs(nums, curIndex, len, res, helper) {
     }
   }
 }
+
+var numUniqueEmails = function(emails) {
+  let set = new Set();
+  for(email of emails) {
+      let realStr = [];
+      let i = 0;
+      while(i < email.length) {
+          if(email.charAt(i) === '.') {
+              i++;
+          } else if(email.charAt(i) === '+') {
+              while(i < email.length && email.charAt(i) !== '@') {
+                  i++;
+              }
+              realStr.push(email.charAt(i++));
+          } else {
+              realStr.push(email.charAt(i++));
+          }
+      }
+      set.add(realStr);
+  }
+  
+  return set.size();
+};
